@@ -25,11 +25,7 @@ import styled from 'styled-components'
 require('normalize.css')
 const fs = require('fs')
 
-const buttonExample = `
-const Button = ({label}) => <div style={{width: 200, height: 80, backgroundColor: 'palevioletred'}} />
-//note to me, do props stuff
-render(<Button label='Press Me'/>)
-`
+const buttonExample = `//note to me, do props stuff\nrender(<div/>)`
 
 const theme = createTheme(
   {
@@ -233,7 +229,7 @@ export default class Presentation extends React.Component {
         <Slide bgColor='background'>
           <ComponentPlayground
             code={buttonExample}
-            previewBackgroundColor='background'
+            previewBackgroundColor='#43405380'
             theme='external'
             scope={{ styled }}
           />
